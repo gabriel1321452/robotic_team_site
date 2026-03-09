@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipe de Liderança | DamerBots</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo-box">
+          <div class="logo-mark">DB</div>
+        </a>
+
+        <nav class="nav">
+          <a href="index.html"><i class="fa-brands fa-instagram"></i> INÍCIO</a>
+          
+          <div class="dropdown">
+            <a href="#" class="active">SOBRE NÓS <i class="fa-solid fa-angle-down small-icon"></i></a>
+            <div class="dropdown-content">
+              <a href="equipe.html">EQUIPE DE LIDERANÇA</a>
+            </div>
+          </div>
+
+          <a href="#">FOTOS</a>
+          <a href="#">BLOG</a>
+          <a href="#">APOIE</a>
+        </nav>
+        <div class="header-cut"></div>
+      </div>
+    </header>
+
+    <section class="equipe-hero">
+      <div class="equipe-hero-content">
+        <h1>Equipe de Liderança</h1>
+        <p>A DamerBots é guiada por uma equipe de líderes dedicada ao desenvolvimento de campeões dentro e fora do campo.</p>
+      </div>
+    </section>
+
+    <section class="equipe-section container">
+      
+      <div class="team-tabs">
+        <button class="team-tab active" onclick="filterTeam('lideranca')">LIDERANÇA PRIMÁRIA</button>
+        <button class="team-tab" onclick="filterTeam('cocapitaes')">CO-CAPITÃES</button>
+        <button class="team-tab" onclick="filterTeam('mentores')">MENTORES</button>
+      </div>
+
+      <h2 class="team-category-title" id="team-title">LIDERANÇA PRIMÁRIA</h2>
+
+      <div class="team-grid-container">
+        <div class="team-grid" id="team-grid">
+          </div>
+        
+        <button class="carousel-btn"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <h2>SEU E-MAIL</h2>
+          <a href="#" class="footer-btn">RECEBER NOVIDADES</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>INFO</h4>
+            <a href="#">SOBRE</a>
+            <a href="#">NOTÍCIAS E BLOG</a>
+            <a href="#">TERMOS E CONDIÇÕES</a>
+            <a href="#">PRIVACIDADE</a>
+          </div>
+          <div class="footer-col middle">
+            <h4>REDES SOCIAIS</h4>
+            <a href="#"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i> FACEBOOK</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> TWITTER / X</a>
+          </div>
+          <div class="footer-col">
+            <h4>CONTATO</h4>
+            <a href="#"><i class="fa-regular fa-envelope"></i> DAMERBOTS@GMAIL.COM</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 DAMERBOTS. TODOS OS DIREITOS RESERVADOS.
+        </div>
+        <div class="footer-brand">damer</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
