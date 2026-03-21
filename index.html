@@ -1,129 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DamerBots</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DamerBots - Equipe de robótica com cultura de excelência, treinamento de elite e desenvolvimento de campeões." />
+    <meta name="theme-color" content="#00338D" />
+    <title>DamerBots</title>
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DamerBots" />
+    <meta property="og:description" content="DamerBots - Equipe de robótica com cultura de excelência e desenvolvimento de campeões." />
+    <meta name="robots" content="index, follow" />
+    <!-- Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Playball&family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bills-blue': '#00338D',
+              'bills-red': '#C60C30',
+              'zt-navy': '#0f172a',
+              'zt-gold': '#C5A059',
+              'zt-cyan': '#6DCFF6',
+              'accent-blue': '#38b6ff',
+              'garland-black': '#111111',
+            },
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Oswald', 'sans-serif'],
+              script: ['Playball', 'cursive'],
+              slab: ['Roboto Slab', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .hero-gradient {
+        background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.3) 100%);
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .clip-diagonal {
+         clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slideIn {
+        animation: slideIn 1s ease-out;
+      }
+    </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DamerBots",
+      "url": "",
+      "description": "DamerBots - Equipe de robótica com cultura de excelência e desenvolvimento de campeões."
+    }
+    </script>
+  <script src="./content.js"></script>
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" crossorigin href="./style.css">
 </head>
-<body>
-
-  <div class="page">
-
-    <header class="header">
-      <div class="header-inner">
-        <a href="index.html" class="logo-box">
-          <div class="logo-mark">DB</div>
-        </a>
-
-        <nav class="nav">
-          <a href="index.html" class="active"><i class="fa-brands fa-instagram"></i> INÍCIO</a>
-          
-          <div class="dropdown">
-            <a href="#">SOBRE NÓS <i class="fa-solid fa-angle-down small-icon"></i></a>
-            <div class="dropdown-content">
-              <a href="equipe.html">EQUIPE DE LIDERANÇA</a>
-            </div>
-          </div>
-
-          <a href="#">FOTOS</a>
-          <a href="#">BLOG</a>
-          <a href="#">APOIE</a>
-        </nav>
-
-        <div class="header-cut"></div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="hero-slides">
-        <img src="img/foto2.jpg" alt="Equipe DamerBots" class="hero-slide active">
-        <img src="img/foto1.jpg" alt="Equipe DamerBots" class="hero-slide">
-      </div>
-
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-        <div class="hero-line"></div>
-        <h1>DAMER<br>BOTS</h1>
-        <p>
-          Construindo o futuro com treinamento de elite,
-          disciplina e cultura vencedora.
-        </p>
-      </div>
-
-      <div class="hero-dots">
-        <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
-        <button class="dot" data-slide="1" aria-label="Slide 2"></button>
-      </div>
-    </section>
-
-    <section class="thumbs">
-      <img src="img/foto1.jpg" alt="Foto 1">
-      <img src="img/foto2.jpg" alt="Foto 2">
-      <img src="img/foto1.jpg" alt="Foto 3">
-      <img src="img/foto2.jpg" alt="Foto 4">
-    </section>
-
-    <section class="mission container">
-      <div class="mission-image">
-        <img src="img/foto1.jpg" alt="Equipe DamerBots">
-      </div>
-
-      <div class="mission-text">
-        <h2>Nossa Missão</h2>
-        <p>
-          <strong>DamerBots</strong> é dedicada a desenvolver a próxima geração de
-          <strong>campeões</strong>, dentro e fora do campo. Oferecemos aos jovens
-          atletas acesso a <strong>treinamento de elite</strong>,
-          <strong>competições nacionais</strong> e uma cultura baseada em
-          <strong>disciplina</strong>, <strong>trabalho em equipe</strong> e
-          <strong>liderança</strong>.
-        </p>
-        <div class="section-line"></div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-top">
-          <h2>SEU E-MAIL</h2>
-          <a href="#" class="footer-btn">RECEBER NOVIDADES</a>
-        </div>
-        <div class="footer-divider"></div>
-        <div class="footer-grid">
-          <div class="footer-col">
-            <h4>INFO</h4>
-            <a href="#">SOBRE</a>
-            <a href="#">NOTÍCIAS E BLOG</a>
-            <a href="#">TERMOS E CONDIÇÕES</a>
-            <a href="#">PRIVACIDADE</a>
-          </div>
-          <div class="footer-col middle">
-            <h4>REDES SOCIAIS</h4>
-            <a href="#"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i> FACEBOOK</a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i> TWITTER / X</a>
-          </div>
-          <div class="footer-col">
-            <h4>CONTATO</h4>
-            <a href="#"><i class="fa-regular fa-envelope"></i> DAMERBOTS@GMAIL.COM</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          © 2026 DAMERBOTS. TODOS OS DIREITOS RESERVADOS.
-        </div>
-        <div class="footer-brand">damer</div>
-      </div>
-    </footer>
-
-  </div>
-
-  <script src="script.js"></script>
+  <body>
+    <div id="root"></div>
 </body>
 </html>
